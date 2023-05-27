@@ -19,6 +19,8 @@ class LoginCLIController:
             result = self.usecase.execute(email, password)
 
             print(result)
+
+            return result
         except UserNotFoundException:
             print('Credenciais Inválidas')
         except InvalidCredentialsException:
