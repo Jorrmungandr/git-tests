@@ -6,8 +6,6 @@ from src.application.exceptions.auth.invalid_credentials_exception import Invali
 from src.application.usecases.auth.login_usecase import LoginUsecase
 
 class LoginCLIController:
-    usecase = LoginUsecase
-
     def __init__(self):
         self.usecase = LoginUsecase()
 

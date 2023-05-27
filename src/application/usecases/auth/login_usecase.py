@@ -1,7 +1,7 @@
 from src.application.exceptions.auth.user_not_found_exception import UserNotFoundException
 from src.application.exceptions.auth.invalid_credentials_exception import InvalidCredentialsException
 
-from src.infrastructure.in_file_storage.user_repository import UserRepository
+from src.infrastructure.in_file_storage.repositories.user_repository import UserRepository
 
 class LoginUsecase:
     def __init__(self):
