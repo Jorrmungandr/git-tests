@@ -1,9 +1,9 @@
 from getpass import getpass
 
-from src.application.exceptions.user_not_found_exception import UserNotFoundException
-from src.application.exceptions.invalid_credentials_exception import InvalidCredentialsException
+from src.application.exceptions.auth.user_not_found_exception import UserNotFoundException
+from src.application.exceptions.auth.invalid_credentials_exception import InvalidCredentialsException
 
-from src.application.usecases.login_usecase import LoginUsecase
+from src.application.usecases.auth.login_usecase import LoginUsecase
 
 class LoginCLIController:
     usecase = LoginUsecase

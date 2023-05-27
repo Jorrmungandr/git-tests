@@ -1,5 +1,5 @@
-from src.application.exceptions.user_not_found_exception import UserNotFoundException
-from src.application.exceptions.invalid_credentials_exception import InvalidCredentialsException
+from src.application.exceptions.auth.user_not_found_exception import UserNotFoundException
+from src.application.exceptions.auth.invalid_credentials_exception import InvalidCredentialsException
 
 from src.infrastructure.in_file_storage.user_repository import UserRepository
 
